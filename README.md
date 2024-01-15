@@ -1,9 +1,4 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# ProjetTwitter
+//Ceci est un projet me permettant de mettre en pratique mon initiation en React.js.
+Le projet consiste en un clown du site très populaire 'Twitter'.
+Le projet reprendra le plus fidèlement possible toutes les fonctionalités de Twitter, y compris les interactions avec les utilisateurs.
+Je vous invite à jeter un regard très critique sur ce dernier et si possible à me faire part de vos rémarques pertinentes directement sur ma boite mail : mbengajehovanny@gmail.com//

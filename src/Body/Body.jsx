@@ -347,7 +347,7 @@ export default function Body() {
           <div className='OptionsSection3_Containers'>
             <div className='Options'>
               <h3>Trends for you</h3>
-              <img src="src/Twitter UI Clone Design (Community) (9)/Icons/More-2.svg" alt="icon setting" />
+              <img src="src/Images/Twitter UI Clone Design (Community) (9)/Icons/More-2.svg" alt="icon setting" />
             </div>
             <div className='Options'>
               <span>
@@ -355,7 +355,7 @@ export default function Body() {
                 <h3>#SQUID</h3>
                 <h5>2,066 Tweets</h5>
               </span>
-              <img src="src/Twitter UI Clone Design (Community) (9)/Icons/More-2.svg" alt="icon option" />
+              <img src="src/Images/Twitter UI Clone Design (Community) (9)/Icons/More-2.svg" alt="icon option" />
             </div>
             <div className='Options'>
               <span>
@@ -363,7 +363,7 @@ export default function Body() {
                 <h3>#SQUID</h3>
                 <h5>2,066 Tweets</h5>
               </span>
-              <img src="src/Twitter UI Clone Design (Community) (9)/Icons/More-2.svg" alt="icon option" />
+              <img src="src/Images/Twitter UI Clone Design (Community) (9)/Icons/More-2.svg" alt="icon option" />
             </div>
             <div className='Options'>
               <span>
@@ -371,7 +371,7 @@ export default function Body() {
                 <h3>#SQUID</h3>
                 <h5>2,066 Tweets</h5>
               </span>
-              <img src="src/Twitter UI Clone Design (Community) (9)/Icons/More-2.svg" alt="icon option" />
+              <img src="src/Images/Twitter UI Clone Design (Community) (9)/Icons/More-2.svg" alt="icon option" />
             </div>
             <div className='Options'>
               <span>
@@ -379,7 +379,7 @@ export default function Body() {
                 <h3>#SQUID</h3>
                 <h5>2,066 Tweets</h5>
               </span>
-              <img src="src/Twitter UI Clone Design (Community) (9)/Icons/More-2.svg" alt="icon option" />
+              <img src="src/Images/Twitter UI Clone Design (Community) (9)/Icons/More-2.svg" alt="icon option" />
             </div>
             <h3>Show more</h3>
           </div>

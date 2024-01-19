@@ -1,9 +1,9 @@
 export function Nav(props) {
   return(
-     <div className=' '>
-           <div className='flex space-x-4 space-y-2 '>
-             <img className='IconsSection1' src={props.icon} alt=" icon home" />
-             <h3>{props.title} </h3> 
+     <div className=' size-15'>
+           <div className='flex space-x-4 space-y-2 p-2 '>
+             <img className=' w-10 h-10' src={props.icon} alt=" icon home" />
+             <h3 className=' w-10 h-10'>{props.title} </h3> 
             </div>
       </div>
   )
@@ -84,18 +84,18 @@ export function Nav(props) {
 //           <div className='IconsSection1_More'>
 //             <img className='IconsSection1' src="src/Images/Twitter UI Clone Design (Community) (5)/Icons/More.svg" alt=" icon more" />
 //             <h3>More</h3>
-//           </div>
-//           <button className='IconsSection1_btn' >Tweet</button>
-//         </div>
-//         <div className='IconsSections'>
-//           <ImgProfil/>
+        //   </div>
+          // <button className='IconsSection1_btn' >Tweet</button>
+        // </div>
+        // <div className='IconsSections'>
+        //   <ImgProfil/>
           
-//           <div>
-//             <h3> Bradley Ortiz</h3>
-//             <h5>@bradley...</h5>
-//           </div>
-//           <img src="src/Twitter UI Clone Design (Community) (9)/Icons/More-2.svg" alt="icon option" />
-//         </div>
+        //   <div>
+        //     <h3> Bradley Ortiz</h3>
+        //     <h5>@bradley...</h5>
+        //   </div>
+        //   <img src="src/Twitter UI Clone Design (Community) (9)/Icons/More-2.svg" alt="icon option" />
+        // </div>
 //       </div>
 // </div>
 //   )

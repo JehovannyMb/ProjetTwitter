@@ -1,4 +1,10 @@
+import { useState } from "react"
 export function Body(props) {
+  let [ReactNbr, setReactNbr]=useState(0)
+  const Ajouter = ()=>{
+    setReactNbr(ReactNbr+1)
+  }
+
   return (
     <div className='flex space-x-2 border-b border-r border-l border-gray-600 p-2'>
       <div className='flex  w-10 '>
@@ -21,7 +27,6 @@ export function Body(props) {
         <div className='flex h-8 w-full  '>
           <div className='flex w-1/4'>
             <img src={props.ReplyIcon} alt="like icon" />
-
             <p>
               {props.ReplyNbr}
             </p>
@@ -33,11 +38,11 @@ export function Body(props) {
               {props.RetweetNbr}
             </p>
           </div>
-          <div className='flex w-1/4'>
+          <div onClick={Ajouter} className='flex w-1/4'>
             <img src={props.ReactIcon} alt="reply icon" />
 
             <p>
-              {props.ReactNbr}
+              {ReactNbr}
             </p>
           </div>
           <div className='flex w-1/4 '>

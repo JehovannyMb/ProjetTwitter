@@ -1,9 +1,9 @@
 export function Nav(props) {
   return(
-     <div className=' size-15'>
-           <div className='flex space-x-4 space-y-2 p-2 '>
-             <img className=' w-10 h-10' src={props.icon} alt=" icon home" />
-             <h3 className=' w-10 h-10'>{props.title} </h3> 
+     <div className=''>
+           <div className='flex space-x-4 space-y-2 p-2 hover:bg-slate-800 rounded-full '>
+             <img className=' w-20 h-10' src={props.icon} alt=" icon home" />
+             <h3 className=' w-20 h-10'>{props.title} </h3> 
             </div>
       </div>
   )

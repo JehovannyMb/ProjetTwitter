@@ -8,7 +8,7 @@ export function Body(props) {
   return (
     <div className='flex space-x-2 border-b border-r border-l border-gray-600 p-2'>
       <div className='flex  w-10 '>
-        <img className="rouded-full w-20 h-8" src={props.ImgProfile} alt="img profile" />
+        <img className=" rounded-full w-20 h-8" src={props.ImgProfile} alt="img profile" />
       </div>
       <div className="flex-col h-full space-y-2 w-full ">
         <div className="flex " >
@@ -22,30 +22,30 @@ export function Body(props) {
         <p>
           {props.paragraphe}
         </p>
-        <img className=" size-30 w-1/2  rounded-3xl " src={props.BodyImg} alt="body img" />
+        <img className="  w-full h-80 rounded-3xl " src={props.BodyImg} alt="body img" />
 
-        <div className='flex h-8 w-full  '>
-          <div className='flex w-1/4'>
+        <div className="flex h-8 w-full ">
+          <div className='flex w-1/4 hover:bg-slate-700 rounded-full'>
             <img src={props.ReplyIcon} alt="like icon" />
             <p>
               {props.ReplyNbr}
             </p>
           </div>
-          <div className='flex w-1/4'>
+          <div className='flex w-1/4 hover:bg-blue-950 rounded-full'>
             <img src={props.RetweetIcon} alt="retweet icon" />
 
             <p>
               {props.RetweetNbr}
             </p>
           </div>
-          <div onClick={Ajouter} className='flex w-1/4'>
-            <img src={props.ReactIcon} alt="reply icon" />
+          <div onClick={Ajouter} className='flex w-1/4  hover:bg-red-500 rounded-full'>
+            <img className=" bg-red-500 rounded-full" src={props.ReactIcon} alt="reply icon" />
 
             <p>
-              {ReactNbr}
+              {props.ReactNbr}
             </p>
           </div>
-          <div className='flex w-1/4 '>
+          <div className='flex w-1/4 hover:bg-blue-950 rounded-full '>
             <img src={props.ShareIcon} alt="share icon" />
 
             <p>

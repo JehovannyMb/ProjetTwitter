@@ -1,29 +1,24 @@
 import axios from 'axios';
-//import { useState } from 'react';
-//const [mount, setState]=useState(0)
-export default class PersonList extends React.Component {
-    state = {
-      persons: []
-    }
-  
-    componentDidMount() {
-      axios.get(`https://jsonplaceholder.typicode.com/guide/`)
-        .then(res => {
-          const persons = res.data;
-          this.setState({ persons });
-        })
-    }
-  
-    render() {
-      return (
-        <ul>
-          {
-            this.state.persons
-              .map(person =>
-                <li key={person.id}>{person.name}</li>
-              )
-          }
-        </ul>
-      )
-    }
-  }
+import { useEffect, useState } from 'react'
+
+
+import React from 'react'
+
+export default function MonApi() {
+  const [postRoute, setPostRoute] = useState('')
+  useEffect(() => {
+    axios.get(`https://my-json-server.typicode.com/amare53/twiterdb/posts`)
+      .then(res => {
+        const affichePosts = res.data
+        setPostRoute( affichePosts )
+        console.log(affichePosts);
+      })
+
+  })
+  return (
+    <div>{postRoute}</div>
+  )
+}
+
+
+

@@ -1,54 +1,55 @@
 import { useState } from "react"
-export function Body(props) {
-  let [ReactIcon, setReactIcon] = useState(0)
- const Ajouter = ()=>{
-  setReactIcon(ReactIcon=
-    'src/Images/heart-regular.svg'
-  )
- }
+export function Body({ tweet }) {
+  const { text, author_image, source, date, isVerified, image, replies, favorites, retweets } = tweet;
+
+  const [like, setLike] = useState(false);
+
+  const Ajouter = () => {
+    setLike(!like);
+  }
 
   return (
     <div className='flex space-x-2 border-b border-r border-l border-gray-600 p-2'>
       <div className='flex  w-10 '>
-        <img className=" rounded-full w-20 h-8" src={props.ImgProfile} alt="img profile" />
+        <img className=" rounded-full w-20 h-8" src={author_image} alt="img profile" />
       </div>
       <div className="flex-col h-full space-y-2 w-full ">
         <div className="flex " >
-          <h3>{props.title1}</h3>
-          <img src={props.VerifiedIcon} alt="verified icon" />
+          <h3>{source}</h3>
+          {isVerified && <img src='./src/Images/Twitter UI Clone Design (Community) (9)/Icons/Verified.svg' alt="verified icon" />}
 
           <p>
-            {props.title2}
+            {date}
           </p>
         </div>
         <p>
-          {props.paragraphe}
+          {text}
         </p>
-        <img className="  w-full h-80 rounded-3xl " src={props.BodyImg} alt="body img" />
+        {image && <img className="  w-full h-80 rounded-3xl " src={image} alt="body img" />}
 
         <div className="flex h-8 w-full ">
           <div className='flex w-1/4 hover:bg-slate-700 rounded-full'>
-            <img src={props.ReplyIcon} alt="like icon" />
+            <img src={'src/Images/Twitter UI Clone Design (Community) (9)/Icons/Reply.svg'} alt="like icon" />
             <p>
-              {props.ReplyNbr}
+              {replies}
             </p>
           </div>
           <div className='flex w-1/4 hover:bg-blue-950 rounded-full'>
-            <img src={props.RetweetIcon} alt="retweet icon" />
+            <img src={'src/Images/Twitter UI Clone Design (Community) (9)/Icons/Retweet.svg'} alt="retweet icon" />
 
             <p>
-              {props.RetweetNbr}
+              {retweets}
             </p>
           </div>
           <div onClick={Ajouter} className='flex w-1/4  hover:bg-red-500 rounded-full'>
-            <img className=" bg-red-500 rounded-full" src={props.ReactIcon} alt="reply icon" />
+            <img className={`${(like) ? 'bg-red-500' : ''} rounded-full`} src={'src/Images/Twitter UI Clone Design (Community) (9)/Icons/React.svg'} alt="reply icon" />
 
             <p>
-              {props.ReactNbr}
+              {favorites}
             </p>
           </div>
           <div className='flex w-1/4 hover:bg-blue-950 rounded-full '>
-            <img src={props.ShareIcon} alt="share icon" />
+            <img src={'src/Images/Twitter UI Clone Design (Community) (9)/Icons/Share.svg'} alt="share icon" />
 
             <p>
             </p>
@@ -89,31 +90,31 @@ export function Body(props) {
 // import ImgProfil from './ImgProfil'
 // export default function Section2() {
 //   return (
-    // <div className='flex row-auto w-full items-center h-8 '>
-      // <div className='items-center h-2'>
-        // <nav className='flex row-auto justify-between border-white'>
-        //   <h2> Home</h2>
-        //   <img src="src/Images/Timeline-Prop.svg" alt="icon" />
-        // </nav>
-        // <div className='flex w-full h-2 container1'>
-        //   <div className='ProfilContainer1'>
-        //     <ImgProfil />
-        //   </div>
-        //   <div className='ProfilContainer2'>
-        //     <input type="text" placeholder="What's happening" />
-        //     <div className='flex'>
-        //       <img className='title' src="src/Images/Twitter UI Clone Design (Community) (5)/Icons/Media.svg" alt="icon media" />
-        //       <img className='title' src="src/Images/Twitter UI Clone Design (Community) (5)/Icons/Gif.svg" alt="icon Gif" />
-        //       <img className='title' src="src/Images/Twitter UI Clone Design (Community) (5)/Icons/Poll.svg" alt="icon poll" />
-        //       <img className='title' src="src/Images/Twitter UI Clone Design (Community) (5)/Icons/Emoji.svg" alt="icon emoji" />
-        //       <img className='title' src="src/Images/Twitter UI Clone Design (Community) (5)/Icons/Schedule.svg" alt="icon schelude" />
+// <div className='flex row-auto w-full items-center h-8 '>
+// <div className='items-center h-2'>
+// <nav className='flex row-auto justify-between border-white'>
+//   <h2> Home</h2>
+//   <img src="src/Images/Timeline-Prop.svg" alt="icon" />
+// </nav>
+// <div className='flex w-full h-2 container1'>
+//   <div className='ProfilContainer1'>
+//     <ImgProfil />
+//   </div>
+//   <div className='ProfilContainer2'>
+//     <input type="text" placeholder="What's happening" />
+//     <div className='flex'>
+//       <img className='title' src="src/Images/Twitter UI Clone Design (Community) (5)/Icons/Media.svg" alt="icon media" />
+//       <img className='title' src="src/Images/Twitter UI Clone Design (Community) (5)/Icons/Gif.svg" alt="icon Gif" />
+//       <img className='title' src="src/Images/Twitter UI Clone Design (Community) (5)/Icons/Poll.svg" alt="icon poll" />
+//       <img className='title' src="src/Images/Twitter UI Clone Design (Community) (5)/Icons/Emoji.svg" alt="icon emoji" />
+//       <img className='title' src="src/Images/Twitter UI Clone Design (Community) (5)/Icons/Schedule.svg" alt="icon schelude" />
 
-        //       <button> Tweet</button>
+//       <button> Tweet</button>
 
-        //     </div>
-        //   </div>
+//     </div>
+//   </div>
 
-        // </div>
+// </div>
 // <div className='Container2'>
 //   <div className='ProfilContainer1'>
 //     <ImgProfil />

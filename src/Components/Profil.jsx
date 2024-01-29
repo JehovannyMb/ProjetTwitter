@@ -1,8 +1,10 @@
 import Tweet from '../tweets-x.json'
 import { NavLink, Outlet } from "react-router-dom"
+import MonApi from '../MonApi'
 
 
 export default function Profil(props) {
+
     return (
         <div className=" h-full">
             <div className="flex">
@@ -32,11 +34,11 @@ export default function Profil(props) {
             </div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur cum voluptate veritatis officia placeat culpa illum tempora voluptatem. Ratione possimus odit ipsa eos nisi libero molestiae similique adipisci quia quidem!</p>
             <div className=' w-full'>
-                <NavLink to={'posts'}>
+                {/* <NavLink to={'posts'}> */}
                     <button className=" hover:bg-slate-400 w-1/5 rounded-2xl bg-white text-black">
-                        Posts
+                      Posts
                     </button>
-                </NavLink>
+                {/* </NavLink> */}
                 <button className="  hover:bg-slate-400 w-1/5 rounded-2xl bg-white text-black">
                     Replies
                 </button>

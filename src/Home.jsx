@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Body } from './Components/Body'
@@ -6,15 +6,15 @@ import ImgProfil from './Components/ImgProfil'
 import { BtnTweet } from './Components/BtnTweet'
 import Tweet from './tweets-x.json'
 
-
 function App() {
-  let [ReactNbr, setReactNbr] = useState(0)
+
+  // get data from api
+  // set it in state
 
 
   return (
     <div className=' bg-black'>
       <div className='flex space-x-4  bg-black text-white h-90 p-1 '>
-          
 
         <div className='flex-col space-y-50 w-full  '>
           <div>
@@ -47,6 +47,11 @@ function App() {
 
             </div>
           </div>
+          {/* map on state to show tweets */}
+          {/* <Body ImgProfile={Tweet.map(ressourse => {
+            ressourse.author_avatar
+          })} title1={Tweet[1].source} title2={Tweet[1].date} VerifiedIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Verified.svg' paragraphe={Tweet[1].text} BodyImg={Tweet[1].image} ReactIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/React.svg' ReplyIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Reply.svg' RetweetIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Retweet.svg' ShareIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Share.svg' ReplyNbr={Tweet[1].replies} RetweetNbr={Tweet[1].retweets} ReactNbr={Tweet[1].favorites} /> */}
+
           <Body ImgProfile={Tweet[1].author_avatar} title1={Tweet[1].source} title2={Tweet[1].date} VerifiedIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Verified.svg' paragraphe={Tweet[1].text} BodyImg={Tweet[1].image} ReactIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/React.svg' ReplyIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Reply.svg' RetweetIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Retweet.svg' ShareIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Share.svg' ReplyNbr={Tweet[1].replies} RetweetNbr={Tweet[1].retweets} ReactNbr={Tweet[1].favorites} />
           <Body ImgProfile={Tweet[0].author_avatar} title1={Tweet[0].source} title2={Tweet[0].date} VerifiedIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Verified.svg' paragraphe={Tweet[0].text} ReactIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/React.svg' ReplyIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Reply.svg' RetweetIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Retweet.svg' ShareIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Share.svg' ReplyNbr={Tweet[0].replies} RetweetNbr={Tweet[0].retweets} ReactNbr={Tweet[1].favorites} />
           <Body ImgProfile={Tweet[2].author_avatar} title1={Tweet[2].source} title2={Tweet[2].date} VerifiedIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Verified.svg' paragraphe={Tweet[2].text} BodyImg={Tweet[2].image} ReactIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/React.svg' ReplyIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Reply.svg' RetweetIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Retweet.svg' ShareIcon='src/Images/Twitter UI Clone Design (Community) (9)/Icons/Share.svg' ReplyNbr={Tweet[2].replies} RetweetNbr={Tweet[2].retweets} ReactNbr={Tweet[1].favorites} />
@@ -66,7 +71,7 @@ function App() {
         </div>
 
 
-        
+
 
       </div>
 

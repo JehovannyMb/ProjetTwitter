@@ -1,9 +1,11 @@
 import { useState } from "react"
 export function Body(props) {
-  let [ReactNbr, setReactNbr]=useState(0)
-  const Ajouter = ()=>{
-    setReactNbr(ReactNbr+1)
-  }
+  let [ReactIcon, setReactIcon] = useState(0)
+ const Ajouter = ()=>{
+  setReactIcon(ReactIcon=
+    'src/Images/heart-regular.svg'
+  )
+ }
 
   return (
     <div className='flex space-x-2 border-b border-r border-l border-gray-600 p-2'>

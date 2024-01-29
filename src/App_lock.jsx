@@ -7,6 +7,7 @@ import ImgProfil from './Components/ImgProfil'
 import { HowToFollow } from './Components/HowToFollow'
 import { BtnTweet } from './Components/BtnTweet'
 import { NavLink, Outlet } from "react-router-dom"
+import axios from 'axios';
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
               <BtnTweet />
 
             </div>
+            
             <div className='flex mt-32 w-full p-2'>
               <ImgProfil />
 

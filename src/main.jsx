@@ -11,6 +11,8 @@ import './index.css'
 import Profil from './Components/Profil.jsx';
 import App_lock from './App_lock.jsx';
 import Posts from './Components/Posts.jsx';
+
+export
 const router = createBrowserRouter([
   {
     path: "/",

@@ -1,6 +1,6 @@
 import { useState } from "react"
 export function Body({ tweet }) {
-  const { text, author_image, source, date, isVerified, image, replies, favorites, retweets } = tweet;
+  const { text, author_avatar, source, date, isVerified, image, replies, favorites, retweets } = tweet;
 
   const [like, setLike] = useState(false);
 
@@ -11,7 +11,7 @@ export function Body({ tweet }) {
   return (
     <div className='flex space-x-2 border-b border-r border-l border-gray-600 p-2'>
       <div className='flex  w-10 '>
-        <img className=" rounded-full w-20 h-8" src={author_image} alt="img profile" />
+        <img className=" rounded-full w-20 h-8" src={author_avatar} alt="img profile" />
       </div>
       <div className="flex-col h-full space-y-2 w-full ">
         <div className="flex " >
